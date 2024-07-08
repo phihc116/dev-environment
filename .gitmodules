@@ -1,0 +1,9 @@
+[submodule "src/newsfeed"]
+	path = src/newsfeed
+	url = https://github.com/phihc116/newsfeed.git
+[submodule "src/queue"]
+	path = src/queue
+	url = https://github.com/phihc116/queue.git
+[submodule "src/notification"]
+	path = src/notification
+	url = https://github.com/phihc116/notification.git

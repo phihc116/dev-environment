@@ -1,0 +1,19 @@
+version: '3.4'
+
+include:
+  - path: 
+      - src/newsfeed/docker-compose.yml  
+      - src/newsfeed/docker-compose.override.yml  
+  # - path: 
+  #     - src/queue/docker-compose.yml
+  #     - src/queue/docker-compose.override.yml
+  # - path: 
+  #     - src/notification/docker-compose.yml  
+  #     - src/notification/docker-compose.override.yml
+
+services:
+  initservice:
+    image: ${DOCKER_REGISTRY-}initservice
+    build:
+      context: .
+      dockerfile: src/InitService/Dockerfile
